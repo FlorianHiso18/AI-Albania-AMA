@@ -101,18 +101,19 @@ st.markdown("""
         transition: all 0.2s ease;
     }
     details.citation > summary {
-        display: inline-block;
+        display: block; /* Fills the whole width */
+        margin: -4px -10px; /* Negate parent padding so it touches the edges */
+        padding: 8px 10px; /* Internal padding for the header */
         color: #ff4b4b !important;
         font-weight: 600;
         outline: none;
         list-style: none; /* Hide default arrow */
         cursor: pointer;
-        padding-top: 4px;
-        padding-bottom: 4px;
         transition: color 0.1s ease;
     }
     details.citation > summary:hover, details.citation[open] > summary {
         color: #ffffff !important; /* Turns white when hovered or clicked */
+        background-color: #171c26; /* Slight hover effect spanning the box */
     }
     details.citation > summary::-webkit-details-marker {
         display: none; /* Safari fix */
@@ -418,7 +419,7 @@ else:
 
         # Footer label
         st.markdown(
-            "<div class='ama-footer'>Made by AI Albania <span>❤️</span> for safe and responsible journalism</div>",
+            "<div class='ama-footer'>Made by AI Albania with <span>❤️</span> for safe and responsible journalism</div>",
             unsafe_allow_html=True
         )
 
