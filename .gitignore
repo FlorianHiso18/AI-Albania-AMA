@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Streamlit secrets — NEVER commit this!
+.streamlit/secrets.toml
+
+# Local environment
+.env
+*.env
+
+# Vector store cache (rebuilds on deploy)
+faiss_index/
