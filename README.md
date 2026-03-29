@@ -1,6 +1,6 @@
 ---
 title: AMA Law Assistant
-emoji: ???
+emoji: 🏛️
 colorFrom: red
 colorTo: blue
 sdk: streamlit
