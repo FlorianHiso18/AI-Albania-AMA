@@ -183,6 +183,10 @@ st.markdown("""
     iframe[height="0"] { display: none !important; }
     /* Hide Streamlit's auto-added anchor links on headings */
     h2 a, h3 a, h4 a { display: none !important; }
+    /* Hide Streamlit Cloud 'Created by' badge and deploy button */
+    [data-testid="stToolbar"] {visibility: hidden !important;}
+    [data-testid="stDecoration"] {display: none !important;}
+    [data-testid="stDeployButton"] {display: none !important;}
     /* Footer label below the chat input bar */
     .ama-footer {
         position: fixed;
