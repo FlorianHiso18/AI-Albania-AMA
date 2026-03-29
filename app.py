@@ -12,7 +12,7 @@ from langchain_community.vectorstores import FAISS
 # - Cloud deploy: set GROQ_API_KEY in Streamlit Cloud "Secrets" settings
 # - Local dev: paste key below OR set it in .streamlit/secrets.toml
 # ==========================================
-GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "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")
+GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "")
 # ==========================================
 if GROQ_API_KEY and len(GROQ_API_KEY) > 20:
     os.environ["GROQ_API_KEY"] = GROQ_API_KEY
