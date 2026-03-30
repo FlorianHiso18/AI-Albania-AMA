@@ -259,7 +259,7 @@ st.markdown("""
   /* Wrapper sits fixed bottom-right */
   .help-fab-wrap {
     position: fixed;
-    bottom: 40px;
+    bottom: 45px;
     right: 28px;
     z-index: 10000;
     list-style: none;
